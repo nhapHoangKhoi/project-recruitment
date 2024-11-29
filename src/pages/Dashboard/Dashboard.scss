@@ -1,0 +1,16 @@
+.line-break
+{
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   white-space: normal;
+}
+
+.dashboard
+{
+   &__item
+   {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+}

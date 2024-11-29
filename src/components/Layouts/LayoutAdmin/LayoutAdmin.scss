@@ -1,0 +1,79 @@
+.layout-admin
+{
+   &__header
+   {
+      display: flex;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      height: 70px;
+
+      position: sticky;
+      top: 0;
+      z-index: 999;
+   }
+
+   &__logo
+   {
+      width: 200px;
+      border-right: 1px solid #ddd;
+      font-size: 24px;
+      font-weight: 800;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.2s;
+
+      a {
+         color: var(--color-main);
+      }
+
+      &--fold
+      {
+         width: 80px;
+      }
+   }
+
+   &__nav
+   {
+      flex: 1;
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 20px;
+   }
+
+   &__sider
+   {
+      position: fixed!important;
+      top: 70px;
+      left: 0;
+
+      height: calc(100vh - 70px);
+
+      border-right: 1px solid #ddd;
+      
+      overflow-y: auto;
+      scrollbar-width: thin;
+   }
+
+   &__content
+   {
+      padding: 20px 20px;
+      margin-left: 200px;
+
+      transition: all 0.2s;
+
+      // moi them vao
+      height: calc(100vh - 70px);
+      overflow-y: auto; // quan trong
+
+      &--full
+      {
+         margin-left: 80px;
+      }
+   }
+}
